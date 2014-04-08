@@ -1,0 +1,93 @@
+@import "compass";
+
+.mail-portlet {
+	.controls-list {
+		padding: 8px 0;
+	}
+
+	#messageContentContainer {
+		background-color: #FFF;
+		border: solid #C8C9CA;
+		border-width: 1px 0;
+		margin: 1em 0;
+		min-height: 2em;
+		overflow: auto;
+		padding: 1em;
+	}
+
+	#messagesContainer {
+		.nav {
+			width: 100%;
+		}
+
+		.table-container {
+			overflow: auto;
+		}
+	}
+
+	.unread {
+		font-weight: bold;
+
+		td {
+			background-color: #FFF;
+		}
+	}
+
+	.draft-link, .message-link {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	.compose-message-container {
+		margin-right: 1em;
+	}
+
+	.no-subject {
+		color: #777;
+		font-style: italic;
+	}
+
+	.message-header {
+		background-color: #FAFAFA;
+		color: #999;
+		margin: 1em 0;
+	}
+
+	.message-pager {
+		li {
+			line-height: 20px;
+		}
+
+		.message-count {
+			display: inline-block;
+			margin: 5px 10px;
+			vertical-align: middle;
+		}
+	}
+
+	.recipient-fields .field-input {
+		width: 95%;
+	}
+
+	.email-container .folder-container .column-sorter:hover {
+		cursor: pointer;
+		cursor: hand;
+		text-decoration: underline;
+	}
+
+	.add-folder-container .field-content, .search .field-content {
+		display: inline-block;
+	}
+}
+
+.aui .mail-portlet .table-bordered {
+	th, td {
+	 	&.attachments {
+			border-left: 0;
+		}
+	}
+}
+
+.ie6 .mail-portlet #messageContentContainer {
+	height: 2em;
+}
